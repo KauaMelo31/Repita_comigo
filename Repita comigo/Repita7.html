@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+    var nota1 = parseInt(prompt("Primeira nota: "));
+    while (nota1<=0){
+        nota1 = parseInt(prompt("Digite a primeira nota novamente: "));
+    }
+    var nota2 = parseInt(prompt("Segunda nota: "));
+    while (nota2<=0){
+        nota2 = parseInt(prompt("Digite a segunda nota novamente: "));
+    }
+    var nota3 = parseInt(prompt("Terceira nota: "));
+    while (nota3<=0){
+        nota3 = parseInt(prompt("Digite a terceira nota novamente: "));
+    }
+    var nota4 = parseInt(prompt("Quarta nota: "));
+    while (nota4<=0){
+        nota4 = parseInt(prompt("Digite a quarta nota novamente: "));
+    }
+    var nota5 = parseInt(prompt("Quinta nota: "));
+    while (nota5<=0){
+        nota5 = parseInt(prompt("Digite a quinta nota novamente: "));
+    }
+    var nota6 = parseInt(prompt("Sexta nota: "));
+    while (nota6<=0){
+        nota6 = parseInt(prompt("Digite a sexta nota novamente: "));
+    }
+    var notas = [nota1,nota2,nota3,nota4,nota5,nota6];
+    
+    var media = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6) / 6;
+    alert("A média é: "+media);
+    document.write("As notas foram: "+notas+"<br>E a média é: "+media);
+    </script>
+
+    
+</head>
+<body>
+    
+</body>
+</html>

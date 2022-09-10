@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+    var notas = [];
+    do{
+    var nota1 = parseInt(prompt("Primeira nota: "));
+    var nota2 = parseInt(prompt("Segunda nota: "));
+    var media = (nota1 + nota2) / 2;
+    notas.push(media);
+    alert("A média de foi de: "+media);
+    if (media < 9.5){
+        alert("Você foi reprovado");
+    } else {
+        alert("Você foi aprovado! Parabens <3");
+        document.write("Aprovação com a média de: "+media+"<br>");
+    }
+    var res = prompt("Calcular a média de outro aluno Sim/Não?");
+    } while (res=="sim" || res=="Sim" || res=="S" || res=="ss" || res=="s");
+
+
+
+    </script>
+
+    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        var numeros=[];
+        var intervalo=[];
+        var numerosFora=[];
+        for(var i=0; i<10; i++){
+        var numero=parseInt(prompt("Digite um número"));
+        numeros[i]=numero;
+       }
+
+       for(var i=0; i<numeros.length; i++){
+            if(numeros[i]>=24 && numeros[i]<=42){
+                intervalo.push(" "+numeros[i]);
+            }else{
+                numerosFora.push(" "+numeros[i]);
+            }
+       }
+
+       if(intervalo.length==0){
+            document.write("Entre 24 e 42: <b>"+intervalo.length+"</b> <br>");
+       }else{
+            document.write("Entre 24 e 42: <b>"+intervalo.length+"</b> ("+intervalo+")<br>");
+       }
+      
+       if(numerosFora.length==0){
+            document.write("Menores que 24 ou maiores que 42: <b>"+numerosFora.length+"</b>");
+       }else{
+            document.write("Menores que 24 ou maiores que 42: <b>"+numerosFora.length+"</b> ("+numerosFora+")");
+       }
+
+    </script>
+
+    
+</head>
+<body>
+    
+</body>
+</html>
